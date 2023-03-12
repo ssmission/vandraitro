@@ -12,6 +12,11 @@ sudo apt-get install git-all -y
 ```
 say no to popup when running the second one
 
+### navigate to webserver folder
+```
+cd /var/www/html/
+```
+
 ### give php writing access in our server
 ```
 sudo chown -R www-data /var/www/html/
@@ -19,6 +24,6 @@ sudo chown -R www-data /var/www/html/
 
 ### make ssm and referral-suite auto-updaters
 ```
-echo "<?php shell_exec('rm -r ssm; git clone https://github.com/ssmission/ssm.git'); die('gjort!'); ?>" >> /var/www/html/github_write_ssm.php
-echo "<?php shell_exec('rm -r referral-suite; git clone https://github.com/ssmission/referral-suite.git'); die('gjort!'); ?>" >> /var/www/html/github_write_referral-suite.php
+git clone https://github.com/ssmission/ssm.git
+git clone https://github.com/ssmission/referral-suite.git
 ```
