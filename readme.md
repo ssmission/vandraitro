@@ -27,3 +27,27 @@ sudo chown -R www-data /var/www/html/
 git clone https://github.com/ssmission/ssm.git
 git clone https://github.com/ssmission/referral-suite.git
 ```
+
+
+____
+
+
+# Webmin Setup
+
+```
+nano /etc/webmin/miniserv.conf    //then change ssl=1 to ssl=0
+service webmin restart
+sudo apt update; sudo apt upgrade -y
+
+//install some things to make everything work after this
+sudo apt-get install software-properties-common
+
+
+//install php 7.3
+sudo apt install software-properties-common
+sudo add-apt-repository ppa:ondrej/php
+sudo apt install php7.3 php7.3-common php7.3-opcache php7.3-cli php7.3-gd php7.3-curl php7.3-mysql
+
+
+
+```
