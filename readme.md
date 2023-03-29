@@ -51,6 +51,4 @@ sudo service webmin restart
 sudo service apache2 restart
 
 
-
-
 ```
