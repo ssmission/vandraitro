@@ -50,5 +50,14 @@ sudo apt install php7.3 php7.3-common php7.3-opcache php7.3-cli php7.3-gd php7.3
 sudo service webmin restart
 sudo service apache2 restart
 
+//go to webmin, search sql, follow the steps to install that. (it'll take a minute to load)
+
+//install phpmyadmin
+apt-get install phpmyadmin
+screen 1 - hit space to put * next to apache2 then tab to ok and hit enter.
+screen 2 - yes to dbconfig-common (hit enter).
+screen 3 - enter mysql root password you gave in section 5 when installing webmin/virtualmin.
+screen 4 - enter password for phpmyadmin's use, or leave it blank for an automatic password - don't use system root password.
+
 
 ```
