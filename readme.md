@@ -58,6 +58,13 @@ screen 1 - hit space to put * next to apache2 then tab to ok and hit enter.
 screen 2 - yes to dbconfig-common (hit enter).
 screen 3 - enter mysql root password you gave in section 5 when installing webmin/virtualmin.
 screen 4 - enter password for phpmyadmin's use, or leave it blank for an automatic password - don't use system root password.
+cp /usr/share/phpmyadmin/config.sample.inc.php /usr/share/phpmyadmin/config.inc.php
+nano /usr/share/phpmyadmin/config.inc.php
+//Add these lines:
+    $cfg['Servers'][$i]['user'] = 'root';
+    $cfg['Servers'][$i]['password'] = 'Mission9205';
+
+
 
 
 ```
